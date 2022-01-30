@@ -2,8 +2,9 @@ name: GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 
 jobs:
   deploy:
